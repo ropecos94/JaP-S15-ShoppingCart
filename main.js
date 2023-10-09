@@ -45,7 +45,7 @@ for (const item of array) {
   container.appendChild(divDeProducto);
 
   btnCart.addEventListener('click', function () {
-      addCart(item);
+      addCart(item.price);
   });
 }
 }
