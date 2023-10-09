@@ -1,5 +1,6 @@
 const URL = 'https://fakestoreapi.com/products'
 const container = document.getElementById("products");
+const carrito = [];
 
 
 
@@ -45,14 +46,17 @@ for (const item of array) {
   container.appendChild(divDeProducto);
 
   btnCart.addEventListener('click', function () {
-      addCart(item.price);
+      addCart(item);
   });
 }
 }
 function addCart(product){
-
+  const name = product.title;
+  const price = product.price;
+  const stock = product.rating.count;
+  carrito.push(product);
 }
-const carrito = [];
+
 
 
 
