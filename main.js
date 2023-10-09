@@ -34,14 +34,25 @@ for (const item of array) {
           <small>${item.rating.count} in stock</small>
       </div>
   `;
+  const btnCart = document.createElement('button');
+    btnCart.classList.add('btn', 'btn-primary', 'mt-2');
+    btnCart.textContent = 'Agregar al Carrito';
+    
+        
   divDeProducto.innerHTML = productHTML;
+  divDeProducto.appendChild(btnCart);
 
   container.appendChild(divDeProducto);
 
-  divDeProducto.addEventListener('click', function () {
-      redirectToProductInfo(item.id);
+  btnCart.addEventListener('click', function () {
+      addCart(item);
   });
 }
 }
+function addCart(product){
+
+}
+const carrito = [];
+
 
 
