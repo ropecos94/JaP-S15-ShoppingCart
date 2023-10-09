@@ -41,7 +41,9 @@ for (const item of array) {
   divDeProducto.addEventListener('click', function () {
       redirectToProductInfo(item.id);
   });
+
+
 }
-}
+};
 
 
