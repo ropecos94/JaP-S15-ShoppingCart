@@ -1,7 +1,8 @@
-const URL = 'https://fakestoreapi.com/products'
+const URL = 'https://fakestoreapi.com/products';
 const container = document.getElementById("products");
 const carrito = [];
 
+const cartPrice = document.getElementById("cartPrice");
 
 
 document.addEventListener("DOMContentLoaded", function (e) {
